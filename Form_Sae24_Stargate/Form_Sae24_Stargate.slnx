@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/Éléments de solution/">
+    <File Path="../UserControlPlanete/UserControlPlanete/UserControlPlanete.csproj" />
+  </Folder>
+  <Project Path="../UCTrombinoPlanete/UCTrombinoPlanete/UCTrombinoPlanete.csproj" Id="2b9ecce5-9adc-4866-9cbc-f81bd2799ae2" />
+  <Project Path="../UserControlBoutonAvecImage/UserControlBoutonAvecImage/UserControlBoutonAvecImage.csproj" Id="4cd05075-56e2-4121-87f1-9476462af43c" />
+  <Project Path="../UserControlBoutonCirculaire/UserControlBoutonCirculaire/UserControlBoutonCirculaire.csproj" Id="dd53f3e5-7fa5-4e0a-ae78-024e27c52414" />
+  <Project Path="../UserControlBoutonIncrementer/UserControlBoutonIncrementer/UserControlBoutonIncrementer.csproj" Id="66c9b10d-ae17-4498-b3a9-ab741f5f9647" />
+  <Project Path="../UserControlExtraterrestres/UserControlExtraterrestres/UserControlExtraterrestres.csproj" Id="1927893a-1361-455a-9400-71512153c4a5" />
+  <Project Path="../UserControlExtraterrestresDetail/UserControlExtraterrestresDetail/UserControlExtraterrestresDetail.csproj" Id="3d422c4b-6e40-4748-bded-5b23f257b858" />
+  <Project Path="../UserControlMembreEquipage/UserControlMembreEquipage/UserControlMembreEquipage.csproj" Id="19b77a99-8a55-459d-9040-9c15b6100408" />
+  <Project Path="../UserControlMembreEquipageDetail/UserControlMembreEquipageDetail/UserControlMembreEquipageDetail.csproj" Id="73980375-b193-4ca5-84f7-1bc4cda1d4a0" />
+  <Project Path="../UserControlMission/UserControlMission/UserControlMission.csproj" Id="6e7d4e70-db88-4364-99aa-12afc6a95ef2" />
+  <Project Path="../UserControlPinPlanete/UserControlPinPlanete/UserControlPinPlanete.csproj" Id="bff22f73-4014-475d-af93-c424eccb34dd" />
+  <Project Path="../UserControlPlanete/UserControlPlanete/UserControlPlanete.csproj" Id="c74bb8f3-9b19-45d9-90e3-88d82c4f1a70" />
+  <Project Path="../UserControlPlaqueMilitaire/UserControlPlaqueMilitaire/UserControlPlaqueMilitaire.csproj" Id="af247ac7-aeff-42b7-bbff-f026de363286" />
+  <Project Path="Form_Sae24_Stargate/Form_Sae24_Stargate.csproj" Id="210d513c-6c9b-41c1-a733-dde392b25741" />
+</Solution>

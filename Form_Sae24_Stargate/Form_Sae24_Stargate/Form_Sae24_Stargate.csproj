@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{210D513C-6C9B-41C1-A733-DDE392B25741}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Form_Sae24_Stargate</RootNamespace>
+    <AssemblyName>Form_Sae24_Stargate</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Core, Version=1.6.0.0, Culture=neutral, PublicKeyToken=4d63bfbfdfd3c6e4, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Core.1.6.0\lib\net452\BCrypt.Net-Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.5, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.5\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connexion.cs" />
+    <Compile Include="FontHelper.cs" />
+    <Compile Include="FormConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfirmation.Designer.cs">
+      <DependentUpon>FormConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mesDatas.cs" />
+    <Compile Include="Pdf.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="SessionMission.cs" />
+    <Compile Include="Statistiques.cs" />
+    <Compile Include="FormAccueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccueil.Designer.cs">
+      <DependentUpon>FormAccueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuthentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuthentification.Designer.cs">
+      <DependentUpon>FormAuthentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalendar.Designer.cs">
+      <DependentUpon>FormCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClickDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClickDetail.Designer.cs">
+      <DependentUpon>FormClickDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEcranChargement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEcranChargement.Designer.cs">
+      <DependentUpon>FormEcranChargement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNouvelleMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNouvelleMission.Designer.cs">
+      <DependentUpon>FormNouvelleMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormParametreMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormParametreMission.Designer.cs">
+      <DependentUpon>FormParametreMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPreparationVaisseau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPreparationVaisseau.Designer.cs">
+      <DependentUpon>FormPreparationVaisseau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSucces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSucces.Designer.cs">
+      <DependentUpon>FormSucces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromTrombino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromTrombino.Designer.cs">
+      <DependentUpon>FromTrombino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UCEditionMission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEditionMission.Designer.cs">
+      <DependentUpon>UCEditionMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCJournalBord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCJournalBord.Designer.cs">
+      <DependentUpon>UCJournalBord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlBarreChargement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBarreChargement.Designer.cs">
+      <DependentUpon>UserControlBarreChargement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDetailMission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDetailMission.Designer.cs">
+      <DependentUpon>UserControlDetailMission.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAccueil.resx">
+      <DependentUpon>FormAccueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuthentification.resx">
+      <DependentUpon>FormAuthentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalendar.resx">
+      <DependentUpon>FormCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClickDetail.resx">
+      <DependentUpon>FormClickDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfirmation.resx">
+      <DependentUpon>FormConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEcranChargement.resx">
+      <DependentUpon>FormEcranChargement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNouvelleMission.resx">
+      <DependentUpon>FormNouvelleMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormParametreMission.resx">
+      <DependentUpon>FormParametreMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPreparationVaisseau.resx">
+      <DependentUpon>FormPreparationVaisseau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSucces.resx">
+      <DependentUpon>FormSucces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromTrombino.resx">
+      <DependentUpon>FromTrombino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEditionMission.resx">
+      <DependentUpon>UCEditionMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCJournalBord.resx">
+      <DependentUpon>UCJournalBord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBarreChargement.resx">
+      <DependentUpon>UserControlBarreChargement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDetailMission.resx">
+      <DependentUpon>UserControlDetailMission.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Stargate.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\UCTrombinoPlanete\UCTrombinoPlanete\UCTrombinoPlanete.csproj">
+      <Project>{2b9ecce5-9adc-4866-9cbc-f81bd2799ae2}</Project>
+      <Name>UCTrombinoPlanete</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlBoutonAvecImage\UserControlBoutonAvecImage\UserControlBoutonAvecImage.csproj">
+      <Project>{4cd05075-56e2-4121-87f1-9476462af43c}</Project>
+      <Name>UserControlBoutonAvecImage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlBoutonCirculaire\UserControlBoutonCirculaire\UserControlBoutonCirculaire.csproj">
+      <Project>{dd53f3e5-7fa5-4e0a-ae78-024e27c52414}</Project>
+      <Name>UserControlBoutonCirculaire</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlBoutonIncrementer\UserControlBoutonIncrementer\UserControlBoutonIncrementer.csproj">
+      <Project>{66c9b10d-ae17-4498-b3a9-ab741f5f9647}</Project>
+      <Name>UserControlBoutonIncrementer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlExtraterrestresDetail\UserControlExtraterrestresDetail\UserControlExtraterrestresDetail.csproj">
+      <Project>{3d422c4b-6e40-4748-bded-5b23f257b858}</Project>
+      <Name>UserControlExtraterrestresDetail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlExtraterrestres\UserControlExtraterrestres\UserControlExtraterrestres.csproj">
+      <Project>{1927893a-1361-455a-9400-71512153c4a5}</Project>
+      <Name>UserControlExtraterrestres</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlMembreEquipageDetail\UserControlMembreEquipageDetail\UserControlMembreEquipageDetail.csproj">
+      <Project>{73980375-b193-4ca5-84f7-1bc4cda1d4a0}</Project>
+      <Name>UserControlMembreEquipageDetail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlMembreEquipage\UserControlMembreEquipage\UserControlMembreEquipage.csproj">
+      <Project>{19b77a99-8a55-459d-9040-9c15b6100408}</Project>
+      <Name>UserControlMembreEquipage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlMission\UserControlMission\UserControlMission.csproj">
+      <Project>{6e7d4e70-db88-4364-99aa-12afc6a95ef2}</Project>
+      <Name>UserControlMission</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlPinPlanete\UserControlPinPlanete\UserControlPinPlanete.csproj">
+      <Project>{bff22f73-4014-475d-af93-c424eccb34dd}</Project>
+      <Name>UserControlPinPlanete</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlPlanete\UserControlPlanete\UserControlPlanete.csproj">
+      <Project>{c74bb8f3-9b19-45d9-90e3-88d82c4f1a70}</Project>
+      <Name>UserControlPlanete</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserControlPlaqueMilitaire\UserControlPlaqueMilitaire\UserControlPlaqueMilitaire.csproj">
+      <Project>{af247ac7-aeff-42b7-bbff-f026de363286}</Project>
+      <Name>UserControlPlaqueMilitaire</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+</Project>
