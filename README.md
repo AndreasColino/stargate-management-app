@@ -11,7 +11,7 @@ Application développée en C# avec Windows Forms et SQLite, permettant de gére
 
 ### Fonctionnalités et Contributions principales
 * **Création de nouvelle mission :** Interface dédiée à l'enregistrement et à la configuration de nouvelles missions d'exploration.
-* **Sécurité & Authentification :** Espace sécurisé pour l'ajout de nouvelles missions protégé par un hachage des mots de passe avec l'algorithme BCrypt.
+* **Sécurité & Authentification :** Espace sécurisé pour l'ajout de nouvelles missions, protégé par un hachage des mots de passe avec l'algorithme BCrypt.
 * **Intégration de l'infrastructure globale :** Assemblage des différents composants (UserControls, formulaires et bases de données) du projet de groupe.
 
 ### Technologies et Outils
