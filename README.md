@@ -1,6 +1,6 @@
 # Stargate Management Application (SAE 24)
 
-> **Note :** Projet académique de groupe réalisé dans le cadre de la SAE 24 (IUT Robert Schuman - Université de Strasbourg). Ce dépôt se focalise sur les modules et composants développés et intégrés personnellement pour le rendu final. *(Note : Faute de temps et de moyens inhérents à un projet universitaire, certaines images de fond ont été générées par IA).*
+> **Note :** Projet académique de groupe réalisé dans le cadre de la SAE 24 (IUT Robert Schuman - Université de Strasbourg). Ce dépôt se focalise sur les modules et composants développés et intégrés personnellement pour le rendu final. *(Faute de temps et de moyens inhérents à un projet universitaire, certaines images de fond ont été générées par IA).*
 
 ---
 
