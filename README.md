@@ -54,7 +54,7 @@ A desktop application developed in C# with Windows Forms and SQLite, designed to
 
 *Prérequis : Windows 10 ou 11 avec .NET Framework 4.7.2 (intégré par défaut).*
 
-1. Rends-toi dans la section **Releases** de ce dépôt.
+1. Rends-toi dans la section [**Releases**](https://github.com/AndreasColino/stargate-management-app/releases) de ce dépôt.
 2. Télécharge l'archive `Form_Sae24_Stargate_v1.0.0.zip`.
 3. Extrais l'intégralité de l'archive dans un dossier (ne lance pas l'exécutable depuis le ZIP).
 4. Lance `Form_Sae24_Stargate.exe`.
@@ -85,7 +85,7 @@ A desktop application developed in C# with Windows Forms and SQLite, designed to
 
 *Prerequisite: Windows 10 or 11 with .NET Framework 4.7.2 (enabled by default).*
 
-1. Go to the **Releases** section of this repository.
+1. Go to the [**Releases**](https://github.com/AndreasColino/stargate-management-app/releases) section of this repository.
 2. Download `Form_Sae24_Stargate_v1.0.0.zip`.
 3. Extract the entire ZIP archive to a folder (do not run the executable from inside the ZIP).
 4. Launch `Form_Sae24_Stargate.exe`.
