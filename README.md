@@ -50,17 +50,50 @@ A desktop application developed in C# with Windows Forms and SQLite, designed to
 
 ### 🇫🇷 Français
 
+#### Option 1 : Téléchargement direct (Recommandé - Windows)
+
+*Prérequis : Windows 10 ou 11 avec .NET Framework 4.7.2 (intégré par défaut).*
+
+1. Rends-toi dans la section **Releases** de ce dépôt.
+2. Télécharge l'archive `Form_Sae24_Stargate_v1.0.0.zip`.
+3. Extrais l'intégralité de l'archive dans un dossier (ne lance pas l'exécutable depuis le ZIP).
+4. Lance `Form_Sae24_Stargate.exe`.
+5. **Identifiants de connexion par défaut :**
+   - **Identifiant :** `Andreas`
+   - **Mot de passe :** `Andreas`
+
+#### Option 2 : Compilation depuis les sources
+
 1. **Cloner le dépôt :**
 
    ```bash
    git clone https://github.com/AndreasColino/stargate-management-app.git
    ```
 
-2. **Ouvrir le fichier de solution dans Visual Studio.**
+2. **Ouvrir le projet :**
+   Ouvre le fichier de solution (`.sln`) dans Visual Studio.
 
-3. **Restaurer les packages NuGet si demandé, puis compiler et exécuter (F5).**
+3. **Restaurer les packages NuGet :**
+   Clic droit sur la solution > Restaurer les packages NuGet.
+
+4. **Compiler et exécuter :**
+   Définis la configuration sur Release (ou Debug), puis compile et lance le projet (`F5`).
 
 ### 🇬🇧 English
+
+#### Option 1: Standalone Download (Recommended - Windows)
+
+*Prerequisite: Windows 10 or 11 with .NET Framework 4.7.2 (enabled by default).*
+
+1. Go to the **Releases** section of this repository.
+2. Download `Form_Sae24_Stargate_v1.0.0.zip`.
+3. Extract the entire ZIP archive to a folder (do not run the executable from inside the ZIP).
+4. Launch `Form_Sae24_Stargate.exe`.
+5. **Default login credentials:**
+   - **Username:** `Andreas`
+   - **Password:** `Andreas`
+
+#### Option 2: Build from Source
 
 1. **Clone the repository:**
 
@@ -68,6 +101,11 @@ A desktop application developed in C# with Windows Forms and SQLite, designed to
    git clone https://github.com/AndreasColino/stargate-management-app.git
    ```
 
-2. **Open the solution file in Visual Studio.**
+2. **Open the project:**
+   Open the solution file (`.sln`) in Visual Studio.
 
-3. **Restore NuGet packages if prompted, then compile and run (F5).**
+3. **Restore NuGet packages:**
+   Right-click the solution > Restore NuGet Packages.
+
+4. **Build and run:**
+   Set the build configuration to Release (or Debug), then build and run (`F5`).
